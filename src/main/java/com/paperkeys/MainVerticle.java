@@ -22,6 +22,6 @@ public class MainVerticle extends AbstractVerticle {
         });
 
         vertx.createHttpServer().requestHandler(router::accept).listen(10000);
-        LOG.info("Server started on port 1000");
+        LOG.info("Server started on port 10000");
     }
 }
