@@ -21,7 +21,7 @@ public class MainVerticle extends AbstractVerticle {
            ctx.response().end("Hello World!");
         });
 
-        vertx.createHttpServer().requestHandler(router::accept).listen(80);
-        LOG.info("Server started on port 80");
+        vertx.createHttpServer().requestHandler(router::accept).listen(8080);
+        LOG.info("Server started on port 8080");
     }
 }
